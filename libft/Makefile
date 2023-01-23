@@ -9,12 +9,11 @@ SRC			=	ft_isalpha.c		ft_isdigit.c		ft_isalnum.c		ft_isascii.c	\
 		  		ft_putendl_fd.c		ft_putnbr_fd.c		ft_itoa_base.c		ft_printf.c		\
 				ft_lstnew.c			ft_lstadd_front.c	ft_lstsize.c	\
 				ft_lstlast.c		ft_lstadd_back.c	ft_lstdelone.c	\
-				ft_lstclear.c		ft_lstiter.c		ft_lstmap.c
-#SRCBONUS	=
+				ft_lstclear.c		ft_lstiter.c		ft_lstmap.c		\
+				get_next_line.c		get_next_line_utils.c
 NAME			= libft.a
 TESTNAME		= tst
 OBJS			= ${SRC:.c=.o}
-#OBJSBONUS		= ${SRCBONUS:.c=.o}
 CC				= gcc
 CFLAGS			= -Wall -Wextra -Werror
 RM				= rm -f
