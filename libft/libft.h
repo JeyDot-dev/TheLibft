@@ -6,12 +6,13 @@
 /*   By: jsousa-a <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 12:01:49 by jsousa-a          #+#    #+#             */
-/*   Updated: 2023/01/23 14:31:17 by jsousa-a         ###   ########.fr       */
+/*   Updated: 2023/01/23 15:23:32 by jsousa-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# define BUFFER_SIZE	42
 # include <stddef.h>
 # include <stdio.h>
 # include <ctype.h>
@@ -20,7 +21,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdarg.h>
-
+# include <fcntl.h>
 typedef struct s_list
 {
 	void			*content;
