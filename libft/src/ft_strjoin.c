@@ -6,7 +6,7 @@
 /*   By: jsousa-a <jsousa-a@student.42lausanne.ch>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 13:11:25 by jsousa-a          #+#    #+#             */
-/*   Updated: 2022/11/04 15:52:01 by jsousa-a         ###   ########.fr       */
+/*   Updated: 2023/09/26 12:08:51 by jsousa-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -24,13 +24,13 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str = malloc(sizeof(*str) * (len + 1));
 	if (!str)
 		return (NULL);
-	while (*s1)
+	while (s1 && *s1)
 	{
 		str[i] = *s1;
 		i++;
 		s1++;
 	}
-	while (*s2)
+	while (s2 && *s2)
 	{
 		str[i] = *s2;
 		i++;

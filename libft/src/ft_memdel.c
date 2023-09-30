@@ -1,28 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_memdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jsousa-a <marvin@42lausanne.ch>            +#+  +:+       +#+        */
+/*   By: gipaul <test42@student.42.ch>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/11 09:58:25 by jsousa-a          #+#    #+#             */
-/*   Updated: 2023/09/26 12:08:24 by jsousa-a         ###   ########.fr       */
+/*   Created: 2023/08/21 18:44:41 by gipaul            #+#    #+#             */
+/*   Updated: 2023/08/21 18:45:23 by gipaul           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+void	*ft_memdel(void *ptr)
 {
-	int	i;
-
-	i = 0;
-	if (!s)
-		return (0);
-	while (*s != 0)
+	if (ptr)
 	{
-		i++;
-		s++;
+		free(ptr);
+		ptr = NULL;
 	}
-	return (i);
+	return (NULL);
 }
