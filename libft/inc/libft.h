@@ -6,7 +6,7 @@
 /*   By: jsousa-a <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 12:01:49 by jsousa-a          #+#    #+#             */
-/*   Updated: 2023/09/24 14:21:55 by jsousa-a         ###   ########.fr       */
+/*   Updated: 2023/10/01 17:34:34 by jsousa-a         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,9 @@
 # define CYAN "\e[0;36m"
 # define WHITE "\e[0;37m"
 # define COLOR_RESET "\e[0m"
+# define HEX "0123456789abcdef"
+# define HEX_C "0123456789ABCDEF"
+# define DEC "0123456789"
 //struct
 typedef struct s_list
 {
@@ -90,6 +93,7 @@ t_list			*ft_lstmap(t_list *lst, void *(*f)(void *),
 //**Added functions**
 int				ft_abs(int n);
 int				ft_printf(const char *str, ...);
+int				ft_fprintf(int fd, const char *str, ...);
 char			*ft_itoa_base(unsigned long long int n, char *base);
 //****GNL****
 char			*g_free(char *str);
